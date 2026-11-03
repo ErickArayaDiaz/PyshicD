@@ -1,0 +1,45 @@
+#pragma once
+
+#include <cstdint>
+#include <iostream>
+#include "Vector2.h"
+
+inline constexpr float PI = 3.14159265f;
+
+struct RigidBody {
+    // Identidad (la asigna World)
+    std::uint32_t id = 0;
+    std::uint32_t material = 0;   // ver nota sobre MaterialId
+
+    // Estado
+    Vector2 position;
+    Vector2 velocity;
+    Vector2 force;
+    float radius = 0.0f;
+
+    // Masa (invMass == 0 significa estático)
+    float mass = 0.0f;
+    float invMass = 0.0f;
+    float gravityScale = 1.0f;    // 1 = cae normal, negativo = sube (vapor), 0 = ignora gravedad
+
+    float area() const { return PI * radius * radius; }
+
+    void applyforce(Vector2 f) {
+        if (invMass == 0.0f) return;   // los estáticos nunca acumulan fuerza
+        force += f;
+    }
+    void clearforces() { force = {0.0f, 0.0f}; }
+
+    void setMass(float m) {
+        if (m <= 0.0f) {
+            std::cerr << "Aviso: masa <= 0, cuerpo " << id << " pasa a estatico\n";
+            mass = 0.0f;
+            invMass = 0.0f;
+            force = {0.0f, 0.0f};      // mantiene la invariante del estático
+            velocity = {0.0f, 0.0f};
+            return;
+        }
+        mass = m;
+        invMass = 1.0f / m;
+    }
+};
