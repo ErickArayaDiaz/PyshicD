@@ -1,0 +1,2 @@
+C:\ProgramData\mingw64\mingw64\bin\ar.exe qc libpysicd_core.a CMakeFiles/pysicd_core.dir/RigidBody.cpp.obj CMakeFiles/pysicd_core.dir/World.cpp.obj CMakeFiles/pysicd_core.dir/Integrator.cpp.obj CMakeFiles/pysicd_core.dir/CollisionDetector.cpp.obj CMakeFiles/pysicd_core.dir/CollisionResolver.cpp.obj
+C:\ProgramData\mingw64\mingw64\bin\ranlib.exe libpysicd_core.a

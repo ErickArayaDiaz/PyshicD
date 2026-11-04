@@ -1,0 +1,5 @@
+C:/Users/erick/Documents/hola/PyshicD/build/CMakeFiles/pysicd_core.dir
+C:/Users/erick/Documents/hola/PyshicD/build/CMakeFiles/pysicd_render.dir
+C:/Users/erick/Documents/hola/PyshicD/build/CMakeFiles/pysicd.dir
+C:/Users/erick/Documents/hola/PyshicD/build/CMakeFiles/edit_cache.dir
+C:/Users/erick/Documents/hola/PyshicD/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,2 @@
+C:\ProgramData\mingw64\mingw64\bin\ar.exe qc libpysicd_render.a CMakeFiles/pysicd_render.dir/Renderer.cpp.obj
+C:\ProgramData\mingw64\mingw64\bin\ranlib.exe libpysicd_render.a

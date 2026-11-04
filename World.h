@@ -29,6 +29,12 @@ public:
     void step(float dt);
     void clearAll();
 
+    template <class F>
+    void forEachBody(F&& f) const {
+    for (const auto& b : m_bodies)
+        f(static_cast<const RigidBody&>(*b));
+    }
+
     const std::vector<std::unique_ptr<RigidBody>>& bodies() const { return m_bodies; }
     std::vector<std::unique_ptr<RigidBody>>& bodies() { return m_bodies; }
     const std::vector<Contact>& contacts() const { return m_contacts; }
