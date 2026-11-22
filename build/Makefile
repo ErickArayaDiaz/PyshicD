@@ -145,17 +145,30 @@ pysicd_render/fast:
 .PHONY : pysicd_render/fast
 
 #=============================================================================
-# Target rules for targets named pysicd
+# Target rules for targets named pysicd_caida
 
 # Build rule for target.
-pysicd: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pysicd
-.PHONY : pysicd
+pysicd_caida: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pysicd_caida
+.PHONY : pysicd_caida
 
 # fast build rule for target.
-pysicd/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd.dir\build.make CMakeFiles/pysicd.dir/build
-.PHONY : pysicd/fast
+pysicd_caida/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_caida.dir\build.make CMakeFiles/pysicd_caida.dir/build
+.PHONY : pysicd_caida/fast
+
+#=============================================================================
+# Target rules for targets named pysicd_escenas
+
+# Build rule for target.
+pysicd_escenas: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pysicd_escenas
+.PHONY : pysicd_escenas
+
+# fast build rule for target.
+pysicd_escenas/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_escenas.dir\build.make CMakeFiles/pysicd_escenas.dir/build
+.PHONY : pysicd_escenas/fast
 
 #=============================================================================
 # Convenience rules to build test dependencies.
@@ -237,6 +250,54 @@ Integrator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_core.dir\build.make CMakeFiles/pysicd_core.dir/Integrator.cpp.s
 .PHONY : Integrator.cpp.s
 
+Main.obj: Main.cpp.obj
+.PHONY : Main.obj
+
+# target to build an object file
+Main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_caida.dir\build.make CMakeFiles/pysicd_caida.dir/Main.cpp.obj
+.PHONY : Main.cpp.obj
+
+Main.i: Main.cpp.i
+.PHONY : Main.i
+
+# target to preprocess a source file
+Main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_caida.dir\build.make CMakeFiles/pysicd_caida.dir/Main.cpp.i
+.PHONY : Main.cpp.i
+
+Main.s: Main.cpp.s
+.PHONY : Main.s
+
+# target to generate assembly for a file
+Main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_caida.dir\build.make CMakeFiles/pysicd_caida.dir/Main.cpp.s
+.PHONY : Main.cpp.s
+
+Main2.obj: Main2.cpp.obj
+.PHONY : Main2.obj
+
+# target to build an object file
+Main2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_escenas.dir\build.make CMakeFiles/pysicd_escenas.dir/Main2.cpp.obj
+.PHONY : Main2.cpp.obj
+
+Main2.i: Main2.cpp.i
+.PHONY : Main2.i
+
+# target to preprocess a source file
+Main2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_escenas.dir\build.make CMakeFiles/pysicd_escenas.dir/Main2.cpp.i
+.PHONY : Main2.cpp.i
+
+Main2.s: Main2.cpp.s
+.PHONY : Main2.s
+
+# target to generate assembly for a file
+Main2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_escenas.dir\build.make CMakeFiles/pysicd_escenas.dir/Main2.cpp.s
+.PHONY : Main2.cpp.s
+
 Renderer.obj: Renderer.cpp.obj
 .PHONY : Renderer.obj
 
@@ -309,30 +370,6 @@ World.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_core.dir\build.make CMakeFiles/pysicd_core.dir/World.cpp.s
 .PHONY : World.cpp.s
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
-
-# target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd.dir\build.make CMakeFiles/pysicd.dir/main.cpp.obj
-.PHONY : main.cpp.obj
-
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd.dir\build.make CMakeFiles/pysicd.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd.dir\build.make CMakeFiles/pysicd.dir/main.cpp.s
-.PHONY : main.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -341,8 +378,9 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... pysicd
+	@echo ... pysicd_caida
 	@echo ... pysicd_core
+	@echo ... pysicd_escenas
 	@echo ... pysicd_render
 	@echo ... CollisionDetector.obj
 	@echo ... CollisionDetector.i
@@ -353,6 +391,12 @@ help:
 	@echo ... Integrator.obj
 	@echo ... Integrator.i
 	@echo ... Integrator.s
+	@echo ... Main.obj
+	@echo ... Main.i
+	@echo ... Main.s
+	@echo ... Main2.obj
+	@echo ... Main2.i
+	@echo ... Main2.s
 	@echo ... Renderer.obj
 	@echo ... Renderer.i
 	@echo ... Renderer.s
@@ -362,9 +406,6 @@ help:
 	@echo ... World.obj
 	@echo ... World.i
 	@echo ... World.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
 .PHONY : help
 
 

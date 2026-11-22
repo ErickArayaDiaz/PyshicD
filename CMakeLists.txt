@@ -24,9 +24,16 @@ add_library(pysicd_render STATIC Renderer.cpp)
 target_link_libraries(pysicd_render PUBLIC pysicd_core SFML::Graphics)
 
 # --- Ejecutable: solo si ya existe main.cpp ---
-if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp)
-    add_executable(pysicd main.cpp)
-    target_link_libraries(pysicd PRIVATE pysicd_render)
+
+# --- Ejecutables de prueba ---
+if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/Main.cpp)
+    add_executable(pysicd_caida Main.cpp)
+    target_link_libraries(pysicd_caida PRIVATE pysicd_render)
+endif()
+
+if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/Main2.cpp)
+    add_executable(pysicd_escenas Main2.cpp)
+    target_link_libraries(pysicd_escenas PRIVATE pysicd_render)
 endif()
 
 # Avisos del compilador: ayudan a cazar errores
