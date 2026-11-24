@@ -67,6 +67,16 @@ CMAKE_BINARY_DIR = C:\Users\erick\Documents\hola\PyshicD\build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	$(CMAKE_USES_TERMINAL_PREFIX)"C:\Program Files\CMake\bin\ctest.exe" $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -145,6 +155,19 @@ pysicd_render/fast:
 .PHONY : pysicd_render/fast
 
 #=============================================================================
+# Target rules for targets named pysicd
+
+# Build rule for target.
+pysicd: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pysicd
+.PHONY : pysicd
+
+# fast build rule for target.
+pysicd/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd.dir\build.make CMakeFiles/pysicd.dir/build
+.PHONY : pysicd/fast
+
+#=============================================================================
 # Target rules for targets named pysicd_caida
 
 # Build rule for target.
@@ -171,7 +194,25 @@ pysicd_escenas/fast:
 .PHONY : pysicd_escenas/fast
 
 #=============================================================================
+# Target rules for targets named pysicd_tests
+
+# Build rule for target.
+pysicd_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pysicd_tests
+.PHONY : pysicd_tests
+
+# fast build rule for target.
+pysicd_tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_tests.dir\build.make CMakeFiles/pysicd_tests.dir/build
+.PHONY : pysicd_tests/fast
+
+#=============================================================================
 # Convenience rules to build test dependencies.
+
+# Build the dependencies of a test.
+test_prep/fisica: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_prep/fisica
+.PHONY : test_prep/fisica
 
 # Build the dependencies of a test.
 test_prep/all: cmake_check_build_system
@@ -298,6 +339,30 @@ Main2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_escenas.dir\build.make CMakeFiles/pysicd_escenas.dir/Main2.cpp.s
 .PHONY : Main2.cpp.s
 
+Main3.obj: Main3.cpp.obj
+.PHONY : Main3.obj
+
+# target to build an object file
+Main3.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd.dir\build.make CMakeFiles/pysicd.dir/Main3.cpp.obj
+.PHONY : Main3.cpp.obj
+
+Main3.i: Main3.cpp.i
+.PHONY : Main3.i
+
+# target to preprocess a source file
+Main3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd.dir\build.make CMakeFiles/pysicd.dir/Main3.cpp.i
+.PHONY : Main3.cpp.i
+
+Main3.s: Main3.cpp.s
+.PHONY : Main3.s
+
+# target to generate assembly for a file
+Main3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd.dir\build.make CMakeFiles/pysicd.dir/Main3.cpp.s
+.PHONY : Main3.cpp.s
+
 Renderer.obj: Renderer.cpp.obj
 .PHONY : Renderer.obj
 
@@ -346,6 +411,54 @@ RigidBody.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_core.dir\build.make CMakeFiles/pysicd_core.dir/RigidBody.cpp.s
 .PHONY : RigidBody.cpp.s
 
+Scenes.obj: Scenes.cpp.obj
+.PHONY : Scenes.obj
+
+# target to build an object file
+Scenes.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_core.dir\build.make CMakeFiles/pysicd_core.dir/Scenes.cpp.obj
+.PHONY : Scenes.cpp.obj
+
+Scenes.i: Scenes.cpp.i
+.PHONY : Scenes.i
+
+# target to preprocess a source file
+Scenes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_core.dir\build.make CMakeFiles/pysicd_core.dir/Scenes.cpp.i
+.PHONY : Scenes.cpp.i
+
+Scenes.s: Scenes.cpp.s
+.PHONY : Scenes.s
+
+# target to generate assembly for a file
+Scenes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_core.dir\build.make CMakeFiles/pysicd_core.dir/Scenes.cpp.s
+.PHONY : Scenes.cpp.s
+
+Test.obj: Test.cpp.obj
+.PHONY : Test.obj
+
+# target to build an object file
+Test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_tests.dir\build.make CMakeFiles/pysicd_tests.dir/Test.cpp.obj
+.PHONY : Test.cpp.obj
+
+Test.i: Test.cpp.i
+.PHONY : Test.i
+
+# target to preprocess a source file
+Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_tests.dir\build.make CMakeFiles/pysicd_tests.dir/Test.cpp.i
+.PHONY : Test.cpp.i
+
+Test.s: Test.cpp.s
+.PHONY : Test.s
+
+# target to generate assembly for a file
+Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_tests.dir\build.make CMakeFiles/pysicd_tests.dir/Test.cpp.s
+.PHONY : Test.cpp.s
+
 World.obj: World.cpp.obj
 .PHONY : World.obj
 
@@ -378,10 +491,13 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... test
+	@echo ... pysicd
 	@echo ... pysicd_caida
 	@echo ... pysicd_core
 	@echo ... pysicd_escenas
 	@echo ... pysicd_render
+	@echo ... pysicd_tests
 	@echo ... CollisionDetector.obj
 	@echo ... CollisionDetector.i
 	@echo ... CollisionDetector.s
@@ -397,12 +513,21 @@ help:
 	@echo ... Main2.obj
 	@echo ... Main2.i
 	@echo ... Main2.s
+	@echo ... Main3.obj
+	@echo ... Main3.i
+	@echo ... Main3.s
 	@echo ... Renderer.obj
 	@echo ... Renderer.i
 	@echo ... Renderer.s
 	@echo ... RigidBody.obj
 	@echo ... RigidBody.i
 	@echo ... RigidBody.s
+	@echo ... Scenes.obj
+	@echo ... Scenes.i
+	@echo ... Scenes.s
+	@echo ... Test.obj
+	@echo ... Test.i
+	@echo ... Test.s
 	@echo ... World.obj
 	@echo ... World.i
 	@echo ... World.s

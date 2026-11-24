@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/pysicd_core.dir/Integrator.cpp.obj.d"
   "CMakeFiles/pysicd_core.dir/RigidBody.cpp.obj"
   "CMakeFiles/pysicd_core.dir/RigidBody.cpp.obj.d"
+  "CMakeFiles/pysicd_core.dir/Scenes.cpp.obj"
+  "CMakeFiles/pysicd_core.dir/Scenes.cpp.obj.d"
   "CMakeFiles/pysicd_core.dir/World.cpp.obj"
   "CMakeFiles/pysicd_core.dir/World.cpp.obj.d"
   "libpysicd_core.a"

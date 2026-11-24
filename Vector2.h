@@ -1,8 +1,6 @@
-
 #pragma once
 #include <cmath>   // std::sqrt
-
-inline constexpr float EPSILON = 1e-6f;
+#include "Constants.h" // EPSILON
 
 struct Vector2
 {

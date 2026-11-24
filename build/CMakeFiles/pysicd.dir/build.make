@@ -74,29 +74,29 @@ include CMakeFiles/pysicd.dir/flags.make
 CMakeFiles/pysicd.dir/codegen:
 .PHONY : CMakeFiles/pysicd.dir/codegen
 
-CMakeFiles/pysicd.dir/main.cpp.obj: CMakeFiles/pysicd.dir/flags.make
-CMakeFiles/pysicd.dir/main.cpp.obj: CMakeFiles/pysicd.dir/includes_CXX.rsp
-CMakeFiles/pysicd.dir/main.cpp.obj: C:/Users/erick/Documents/hola/PyshicD/main.cpp
-CMakeFiles/pysicd.dir/main.cpp.obj: CMakeFiles/pysicd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pysicd.dir/main.cpp.obj"
-	C:\ProgramData\mingw64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pysicd.dir/main.cpp.obj -MF CMakeFiles\pysicd.dir\main.cpp.obj.d -o CMakeFiles\pysicd.dir\main.cpp.obj -c C:\Users\erick\Documents\hola\PyshicD\main.cpp
+CMakeFiles/pysicd.dir/Main3.cpp.obj: CMakeFiles/pysicd.dir/flags.make
+CMakeFiles/pysicd.dir/Main3.cpp.obj: CMakeFiles/pysicd.dir/includes_CXX.rsp
+CMakeFiles/pysicd.dir/Main3.cpp.obj: C:/Users/erick/Documents/hola/PyshicD/Main3.cpp
+CMakeFiles/pysicd.dir/Main3.cpp.obj: CMakeFiles/pysicd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pysicd.dir/Main3.cpp.obj"
+	C:\ProgramData\mingw64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pysicd.dir/Main3.cpp.obj -MF CMakeFiles\pysicd.dir\Main3.cpp.obj.d -o CMakeFiles\pysicd.dir\Main3.cpp.obj -c C:\Users\erick\Documents\hola\PyshicD\Main3.cpp
 
-CMakeFiles/pysicd.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pysicd.dir/main.cpp.i"
-	C:\ProgramData\mingw64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\erick\Documents\hola\PyshicD\main.cpp > CMakeFiles\pysicd.dir\main.cpp.i
+CMakeFiles/pysicd.dir/Main3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pysicd.dir/Main3.cpp.i"
+	C:\ProgramData\mingw64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\erick\Documents\hola\PyshicD\Main3.cpp > CMakeFiles\pysicd.dir\Main3.cpp.i
 
-CMakeFiles/pysicd.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pysicd.dir/main.cpp.s"
-	C:\ProgramData\mingw64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\erick\Documents\hola\PyshicD\main.cpp -o CMakeFiles\pysicd.dir\main.cpp.s
+CMakeFiles/pysicd.dir/Main3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pysicd.dir/Main3.cpp.s"
+	C:\ProgramData\mingw64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\erick\Documents\hola\PyshicD\Main3.cpp -o CMakeFiles\pysicd.dir\Main3.cpp.s
 
 # Object files for target pysicd
 pysicd_OBJECTS = \
-"CMakeFiles/pysicd.dir/main.cpp.obj"
+"CMakeFiles/pysicd.dir/Main3.cpp.obj"
 
 # External object files for target pysicd
 pysicd_EXTERNAL_OBJECTS =
 
-pysicd.exe: CMakeFiles/pysicd.dir/main.cpp.obj
+pysicd.exe: CMakeFiles/pysicd.dir/Main3.cpp.obj
 pysicd.exe: CMakeFiles/pysicd.dir/build.make
 pysicd.exe: libpysicd_render.a
 pysicd.exe: libpysicd_core.a

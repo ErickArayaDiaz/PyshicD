@@ -1,4 +1,5 @@
 #include "CollisionDetector.h"
+#include "Constants.h"
 #include <algorithm>
 
 void CollisionDetector::detect(const std::vector<std::unique_ptr<RigidBody>>& bodies,

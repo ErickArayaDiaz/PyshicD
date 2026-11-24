@@ -67,15 +67,19 @@ CMAKE_BINARY_DIR = C:\Users\erick\Documents\hola\PyshicD\build
 # The main recursive "all" target.
 all: CMakeFiles/pysicd_core.dir/all
 all: CMakeFiles/pysicd_render.dir/all
+all: CMakeFiles/pysicd.dir/all
 all: CMakeFiles/pysicd_caida.dir/all
 all: CMakeFiles/pysicd_escenas.dir/all
+all: CMakeFiles/pysicd_tests.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/pysicd_core.dir/codegen
 codegen: CMakeFiles/pysicd_render.dir/codegen
+codegen: CMakeFiles/pysicd.dir/codegen
 codegen: CMakeFiles/pysicd_caida.dir/codegen
 codegen: CMakeFiles/pysicd_escenas.dir/codegen
+codegen: CMakeFiles/pysicd_tests.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -85,8 +89,10 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/pysicd_core.dir/clean
 clean: CMakeFiles/pysicd_render.dir/clean
+clean: CMakeFiles/pysicd.dir/clean
 clean: CMakeFiles/pysicd_caida.dir/clean
 clean: CMakeFiles/pysicd_escenas.dir/clean
+clean: CMakeFiles/pysicd_tests.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -96,12 +102,12 @@ clean: CMakeFiles/pysicd_escenas.dir/clean
 CMakeFiles/pysicd_core.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_core.dir\build.make CMakeFiles/pysicd_core.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_core.dir\build.make CMakeFiles/pysicd_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=3,4,5,6,7,8 "Built target pysicd_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=5,6,7,8,9,10,11 "Built target pysicd_core"
 .PHONY : CMakeFiles/pysicd_core.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pysicd_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/pysicd_core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles 0
 .PHONY : CMakeFiles/pysicd_core.dir/rule
@@ -113,7 +119,7 @@ pysicd_core: CMakeFiles/pysicd_core.dir/rule
 # codegen rule for target.
 CMakeFiles/pysicd_core.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_core.dir\build.make CMakeFiles/pysicd_core.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=3,4,5,6,7,8 "Finished codegen for target pysicd_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=5,6,7,8,9,10,11 "Finished codegen for target pysicd_core"
 .PHONY : CMakeFiles/pysicd_core.dir/codegen
 
 # clean rule for target.
@@ -128,12 +134,12 @@ CMakeFiles/pysicd_core.dir/clean:
 CMakeFiles/pysicd_render.dir/all: CMakeFiles/pysicd_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_render.dir\build.make CMakeFiles/pysicd_render.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_render.dir\build.make CMakeFiles/pysicd_render.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=11,12 "Built target pysicd_render"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=14,15 "Built target pysicd_render"
 .PHONY : CMakeFiles/pysicd_render.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pysicd_render.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/pysicd_render.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles 0
 .PHONY : CMakeFiles/pysicd_render.dir/rule
@@ -145,13 +151,46 @@ pysicd_render: CMakeFiles/pysicd_render.dir/rule
 # codegen rule for target.
 CMakeFiles/pysicd_render.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_render.dir\build.make CMakeFiles/pysicd_render.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=11,12 "Finished codegen for target pysicd_render"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=14,15 "Finished codegen for target pysicd_render"
 .PHONY : CMakeFiles/pysicd_render.dir/codegen
 
 # clean rule for target.
 CMakeFiles/pysicd_render.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_render.dir\build.make CMakeFiles/pysicd_render.dir/clean
 .PHONY : CMakeFiles/pysicd_render.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/pysicd.dir
+
+# All Build rule for target.
+CMakeFiles/pysicd.dir/all: CMakeFiles/pysicd_core.dir/all
+CMakeFiles/pysicd.dir/all: CMakeFiles/pysicd_render.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd.dir\build.make CMakeFiles/pysicd.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd.dir\build.make CMakeFiles/pysicd.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=1,2 "Built target pysicd"
+.PHONY : CMakeFiles/pysicd.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pysicd.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/pysicd.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles 0
+.PHONY : CMakeFiles/pysicd.dir/rule
+
+# Convenience name for target.
+pysicd: CMakeFiles/pysicd.dir/rule
+.PHONY : pysicd
+
+# codegen rule for target.
+CMakeFiles/pysicd.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd.dir\build.make CMakeFiles/pysicd.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=1,2 "Finished codegen for target pysicd"
+.PHONY : CMakeFiles/pysicd.dir/codegen
+
+# clean rule for target.
+CMakeFiles/pysicd.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd.dir\build.make CMakeFiles/pysicd.dir/clean
+.PHONY : CMakeFiles/pysicd.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/pysicd_caida.dir
@@ -161,12 +200,12 @@ CMakeFiles/pysicd_caida.dir/all: CMakeFiles/pysicd_core.dir/all
 CMakeFiles/pysicd_caida.dir/all: CMakeFiles/pysicd_render.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_caida.dir\build.make CMakeFiles/pysicd_caida.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_caida.dir\build.make CMakeFiles/pysicd_caida.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=1,2 "Built target pysicd_caida"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=3,4 "Built target pysicd_caida"
 .PHONY : CMakeFiles/pysicd_caida.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pysicd_caida.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/pysicd_caida.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles 0
 .PHONY : CMakeFiles/pysicd_caida.dir/rule
@@ -178,7 +217,7 @@ pysicd_caida: CMakeFiles/pysicd_caida.dir/rule
 # codegen rule for target.
 CMakeFiles/pysicd_caida.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_caida.dir\build.make CMakeFiles/pysicd_caida.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=1,2 "Finished codegen for target pysicd_caida"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=3,4 "Finished codegen for target pysicd_caida"
 .PHONY : CMakeFiles/pysicd_caida.dir/codegen
 
 # clean rule for target.
@@ -194,12 +233,12 @@ CMakeFiles/pysicd_escenas.dir/all: CMakeFiles/pysicd_core.dir/all
 CMakeFiles/pysicd_escenas.dir/all: CMakeFiles/pysicd_render.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_escenas.dir\build.make CMakeFiles/pysicd_escenas.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_escenas.dir\build.make CMakeFiles/pysicd_escenas.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=9,10 "Built target pysicd_escenas"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=12,13 "Built target pysicd_escenas"
 .PHONY : CMakeFiles/pysicd_escenas.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pysicd_escenas.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/pysicd_escenas.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles 0
 .PHONY : CMakeFiles/pysicd_escenas.dir/rule
@@ -211,7 +250,7 @@ pysicd_escenas: CMakeFiles/pysicd_escenas.dir/rule
 # codegen rule for target.
 CMakeFiles/pysicd_escenas.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_escenas.dir\build.make CMakeFiles/pysicd_escenas.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=9,10 "Finished codegen for target pysicd_escenas"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=12,13 "Finished codegen for target pysicd_escenas"
 .PHONY : CMakeFiles/pysicd_escenas.dir/codegen
 
 # clean rule for target.
@@ -220,10 +259,46 @@ CMakeFiles/pysicd_escenas.dir/clean:
 .PHONY : CMakeFiles/pysicd_escenas.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/pysicd_tests.dir
+
+# All Build rule for target.
+CMakeFiles/pysicd_tests.dir/all: CMakeFiles/pysicd_core.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_tests.dir\build.make CMakeFiles/pysicd_tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_tests.dir\build.make CMakeFiles/pysicd_tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=16,17 "Built target pysicd_tests"
+.PHONY : CMakeFiles/pysicd_tests.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pysicd_tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/pysicd_tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles 0
+.PHONY : CMakeFiles/pysicd_tests.dir/rule
+
+# Convenience name for target.
+pysicd_tests: CMakeFiles/pysicd_tests.dir/rule
+.PHONY : pysicd_tests
+
+# codegen rule for target.
+CMakeFiles/pysicd_tests.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_tests.dir\build.make CMakeFiles/pysicd_tests.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=16,17 "Finished codegen for target pysicd_tests"
+.PHONY : CMakeFiles/pysicd_tests.dir/codegen
+
+# clean rule for target.
+CMakeFiles/pysicd_tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pysicd_tests.dir\build.make CMakeFiles/pysicd_tests.dir/clean
+.PHONY : CMakeFiles/pysicd_tests.dir/clean
+
+#=============================================================================
 # Targets to build the dependencies of tests.
 
+# Build the dependencies of a test.
+test_prep/fisica: CMakeFiles/pysicd_tests.dir/all
+.PHONY : test_prep/fisica
+
 # Build the dependencies of all tests.
-test_prep/all:
+test_prep/all: test_prep/fisica
 .PHONY : test_prep/all
 
 #=============================================================================

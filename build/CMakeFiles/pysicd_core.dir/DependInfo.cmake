@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/erick/Documents/hola/PyshicD/CollisionResolver.cpp" "CMakeFiles/pysicd_core.dir/CollisionResolver.cpp.obj" "gcc" "CMakeFiles/pysicd_core.dir/CollisionResolver.cpp.obj.d"
   "C:/Users/erick/Documents/hola/PyshicD/Integrator.cpp" "CMakeFiles/pysicd_core.dir/Integrator.cpp.obj" "gcc" "CMakeFiles/pysicd_core.dir/Integrator.cpp.obj.d"
   "C:/Users/erick/Documents/hola/PyshicD/RigidBody.cpp" "CMakeFiles/pysicd_core.dir/RigidBody.cpp.obj" "gcc" "CMakeFiles/pysicd_core.dir/RigidBody.cpp.obj.d"
+  "C:/Users/erick/Documents/hola/PyshicD/Scenes.cpp" "CMakeFiles/pysicd_core.dir/Scenes.cpp.obj" "gcc" "CMakeFiles/pysicd_core.dir/Scenes.cpp.obj.d"
   "C:/Users/erick/Documents/hola/PyshicD/World.cpp" "CMakeFiles/pysicd_core.dir/World.cpp.obj" "gcc" "CMakeFiles/pysicd_core.dir/World.cpp.obj.d"
   )
 

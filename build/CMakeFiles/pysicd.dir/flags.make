@@ -6,5 +6,5 @@ CXX_DEFINES = -DSFML_STATIC
 
 CXX_INCLUDES = @CMakeFiles\pysicd.dir\includes_CXX.rsp
 
-CXX_FLAGS = -std=c++17
+CXX_FLAGS = -std=c++17 -Wall -Wextra
 

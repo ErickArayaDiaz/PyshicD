@@ -79,6 +79,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/pysicd_core.dir/DependInfo.cmake"
   "CMakeFiles/pysicd_render.dir/DependInfo.cmake"
+  "CMakeFiles/pysicd.dir/DependInfo.cmake"
   "CMakeFiles/pysicd_caida.dir/DependInfo.cmake"
   "CMakeFiles/pysicd_escenas.dir/DependInfo.cmake"
+  "CMakeFiles/pysicd_tests.dir/DependInfo.cmake"
   )

@@ -4,8 +4,7 @@
 #include <iostream>
 #include "Vector2.h"
 #include "MaterialTable.h"   // Material y MaterialId
-
-inline constexpr float PI = 3.14159265f;
+#include "Constants.h" // PI
 
 struct RigidBody {
     // El World asigna id, posición, radio y material

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/pysicd.dir/main.cpp.obj"
-  "CMakeFiles/pysicd.dir/main.cpp.obj.d"
+  "CMakeFiles/pysicd.dir/Main3.cpp.obj"
+  "CMakeFiles/pysicd.dir/Main3.cpp.obj.d"
   "libpysicd.dll.a"
   "pysicd.exe"
   "pysicd.exe.manifest"

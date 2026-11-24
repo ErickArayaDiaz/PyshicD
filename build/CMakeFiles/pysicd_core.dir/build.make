@@ -149,13 +149,29 @@ CMakeFiles/pysicd_core.dir/CollisionResolver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pysicd_core.dir/CollisionResolver.cpp.s"
 	C:\ProgramData\mingw64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\erick\Documents\hola\PyshicD\CollisionResolver.cpp -o CMakeFiles\pysicd_core.dir\CollisionResolver.cpp.s
 
+CMakeFiles/pysicd_core.dir/Scenes.cpp.obj: CMakeFiles/pysicd_core.dir/flags.make
+CMakeFiles/pysicd_core.dir/Scenes.cpp.obj: CMakeFiles/pysicd_core.dir/includes_CXX.rsp
+CMakeFiles/pysicd_core.dir/Scenes.cpp.obj: C:/Users/erick/Documents/hola/PyshicD/Scenes.cpp
+CMakeFiles/pysicd_core.dir/Scenes.cpp.obj: CMakeFiles/pysicd_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pysicd_core.dir/Scenes.cpp.obj"
+	C:\ProgramData\mingw64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pysicd_core.dir/Scenes.cpp.obj -MF CMakeFiles\pysicd_core.dir\Scenes.cpp.obj.d -o CMakeFiles\pysicd_core.dir\Scenes.cpp.obj -c C:\Users\erick\Documents\hola\PyshicD\Scenes.cpp
+
+CMakeFiles/pysicd_core.dir/Scenes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pysicd_core.dir/Scenes.cpp.i"
+	C:\ProgramData\mingw64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\erick\Documents\hola\PyshicD\Scenes.cpp > CMakeFiles\pysicd_core.dir\Scenes.cpp.i
+
+CMakeFiles/pysicd_core.dir/Scenes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pysicd_core.dir/Scenes.cpp.s"
+	C:\ProgramData\mingw64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\erick\Documents\hola\PyshicD\Scenes.cpp -o CMakeFiles\pysicd_core.dir\Scenes.cpp.s
+
 # Object files for target pysicd_core
 pysicd_core_OBJECTS = \
 "CMakeFiles/pysicd_core.dir/RigidBody.cpp.obj" \
 "CMakeFiles/pysicd_core.dir/World.cpp.obj" \
 "CMakeFiles/pysicd_core.dir/Integrator.cpp.obj" \
 "CMakeFiles/pysicd_core.dir/CollisionDetector.cpp.obj" \
-"CMakeFiles/pysicd_core.dir/CollisionResolver.cpp.obj"
+"CMakeFiles/pysicd_core.dir/CollisionResolver.cpp.obj" \
+"CMakeFiles/pysicd_core.dir/Scenes.cpp.obj"
 
 # External object files for target pysicd_core
 pysicd_core_EXTERNAL_OBJECTS =
@@ -165,9 +181,10 @@ libpysicd_core.a: CMakeFiles/pysicd_core.dir/World.cpp.obj
 libpysicd_core.a: CMakeFiles/pysicd_core.dir/Integrator.cpp.obj
 libpysicd_core.a: CMakeFiles/pysicd_core.dir/CollisionDetector.cpp.obj
 libpysicd_core.a: CMakeFiles/pysicd_core.dir/CollisionResolver.cpp.obj
+libpysicd_core.a: CMakeFiles/pysicd_core.dir/Scenes.cpp.obj
 libpysicd_core.a: CMakeFiles/pysicd_core.dir/build.make
 libpysicd_core.a: CMakeFiles/pysicd_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libpysicd_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\erick\Documents\hola\PyshicD\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libpysicd_core.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\pysicd_core.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\pysicd_core.dir\link.txt --verbose=$(VERBOSE)
 
